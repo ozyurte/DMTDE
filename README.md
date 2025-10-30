@@ -9,8 +9,7 @@
 We introduce the **Dark Matter to Dark Energy Transition (DMTDE)** model... *(tam abstract yukarıda)*
 
 ## Repository Contents
-- `main.tex`: LaTeX source
-- `DMTDE_paper.pdf`: Manuscript
+- `Ozyurt_DMTDE.pdf`: Manuscript
 - `figures/`: All plots
 - `supplementary.pdf`: Extended tables, derivations
 
