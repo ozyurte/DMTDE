@@ -16,13 +16,12 @@ We introduce the **Dark Matter to Dark Energy Transition (DMTDE)** model... *(ta
 
 ## Reproducibility
 
-```bash
-# Clone
-git clone https://github.com/ozyurte/DMTDE.git
-cd DMTDE
+## Pipeline Usage
+1. `process_all_z.py`  
+   - Input: AbacusSummit halo catalogs (`z*` folders)  
+   - Output: `z_summary.json`, `all_z_results.txt`  
+   - Computes mean halo mass and applies DMTDE suppression (D_Γ² = 0.975)
 
-# Install
-pip install -r pipeline/requirements.txt
-
-# Run
-python pipeline/run_analysis.py
+2. `plot_highz.py`  
+   - Reads `z_summary.json`  
+   - Generates `figures/highz_suppression.png`
