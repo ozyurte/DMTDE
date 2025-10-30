@@ -1,0 +1,55 @@
+theory:
+  camb:
+    extra_args:
+      halofit_version: mead
+      lens_potential_accuracy: 1
+likelihood:
+  bao.desi_2024_bao_all: null
+params:
+  ombh2:
+    prior:
+      min: 0.019
+      max: 0.025
+    ref: 0.0224
+    proposal: 0.0001
+  omch2:
+    prior:
+      min: 0.1
+      max: 0.16
+    ref: 0.12
+    proposal: 0.001
+  H0:
+    prior:
+      min: 60
+      max: 80
+    ref: 70
+    proposal: 1
+  ns:
+    prior:
+      min: 0.9
+      max: 1.0
+    ref: 0.96
+    proposal: 0.005
+  tau:
+    prior:
+      min: 0.01
+      max: 0.2
+    ref: 0.05
+    proposal: 0.01
+  As:
+    prior:
+      min: 1.8e-09
+      max: 2.5e-09
+    ref: 2.1e-09
+    proposal: 1.0e-10
+  Om:
+    derived: 'lambda ombh2, omch2, H0: (ombh2 + omch2) / (H0/100)**2'
+  sigma8:
+    derived: true
+  S8:
+    derived: 'lambda sigma8, Om: sigma8 * (Om / 0.3)**0.5'
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    max_tries: 20000
+output: dmtde_final
