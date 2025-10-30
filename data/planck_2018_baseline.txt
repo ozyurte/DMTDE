@@ -1,0 +1,8 @@
+# Planck 2018 Baseline Constraints (TT,TE,EE+lowE+lensing)
+# Source: arXiv:1807.06209, Table 2
+H0      = 67.36 ± 0.54  km/s/Mpc
+Omega_m = 0.3153 ± 0.0073
+Omega_b = 0.0493 ± 0.0006
+sigma_8 = 0.8111 ± 0.0060
+n_s     = 0.9649 ± 0.0042
+tau     = 0.0544 ± 0.0073
