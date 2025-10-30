@@ -15,6 +15,14 @@ We introduce the **Dark Matter to Dark Energy Transition (DMTDE)** model... *(ta
 - `supplementary.pdf`: Extended tables, derivations
 
 ## Reproducibility
+
 ```bash
-pip install numpy scipy astropy emcee matplotlib
+# Clone
+git clone https://github.com/ozyurte/DMTDE.git
+cd DMTDE
+
+# Install
+pip install -r pipeline/requirements.txt
+
+# Run
 python pipeline/run_analysis.py
